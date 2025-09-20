@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Report</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student Grade Report</h1>
+        <p class="subtitle">Simple grade calculator with custom subjects</p>
+      </header>
+
+      <div class="content">
+        <div class="section">
+          <h2>Student Information</h2>
+          <div class="input-group">
+            <label for="studentName">Student Name:</label>
+            <input
+              type="text"
+              id="studentName"
+              placeholder="Enter student name"
+            />
+          </div>
+          <div class="input-group">
+            <label for="studentClass">Class/Grade:</label>
+            <input
+              type="text"
+              id="studentClass"
+              placeholder="Enter class/grade"
+            />
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Subject Marks</h2>
+          <div id="subjectInputs" class="subject-inputs">
+            <div class="subject-row">
+              <input
+                type="text"
+                class="subject-name"
+                placeholder="Subject name"
+              />
+              <input
+                type="number"
+                class="subject-marks"
+                min="0"
+                max="100"
+                placeholder="Marks (0-100)"
+              />
+              <button class="remove-btn">×</button>
+            </div>
+            <div class="subject-row">
+              <input
+                type="text"
+                class="subject-name"
+                placeholder="Subject name"
+              />
+              <input
+                type="number"
+                class="subject-marks"
+                min="0"
+                max="100"
+                placeholder="Marks (0-100)"
+              />
+              <button class="remove-btn">×</button>
+            </div>
+          </div>
+
+          <button id="addSubject" class="add-subject-btn">+ Add Subject</button>
+          <button onclick="calculateGrades()">Generate Report Card</button>
+        </div>
+
+        <div id="reportCard" class="report-card" style="display: none">
+          <h2>Report Card</h2>
+          <div id="studentInfo"></div>
+
+          <div class="subject-list" id="subjectList"></div>
+
+          <div class="grade-box">
+            <div class="grade-item">
+              <div>Total Marks</div>
+              <div class="grade-value" id="totalMarks"></div>
+            </div>
+            <div class="grade-item">
+              <div>Average</div>
+              <div class="grade-value" id="averageMarks"></div>
+            </div>
+            <div class="grade-item">
+              <div>Overall Grade</div>
+              <div class="grade-value" id="overallGrade"></div>
+            </div>
+          </div>
+
+          <div class="comments">
+            <h3>Comments:</h3>
+            <p id="commentsText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

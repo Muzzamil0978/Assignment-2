@@ -1,0 +1,214 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+     background-color: #f5f7fa;
+     color: #333;
+     min-height: 100vh;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .container {
+     width: 100%;
+     max-width: 800px;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     margin: 20px 0;
+ }
+
+ header {
+     background-color: #4a6fc7;
+     color: white;
+     padding: 20px;
+     text-align: center;
+ }
+
+ h1 {
+     font-size: 1.8rem;
+     margin-bottom: 5px;
+ }
+
+ .subtitle {
+     font-size: 1rem;
+     opacity: 0.9;
+ }
+
+ .content {
+     padding: 20px;
+ }
+
+ .section {
+     background-color: #f8f9fa;
+     border-radius: 8px;
+     padding: 15px;
+     margin-bottom: 20px;
+     border-left: 4px solid #4a6fc7;
+ }
+
+ h2 {
+     color: #4a6fc7;
+     margin-bottom: 15px;
+     font-size: 1.3rem;
+ }
+
+ .input-group {
+     margin-bottom: 12px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: 600;
+     color: #495057;
+     font-size: 0.9rem;
+ }
+
+ input, select, button {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #dee2e6;
+     border-radius: 5px;
+     font-size: 0.95rem;
+ }
+
+ input:focus, select:focus {
+     outline: none;
+     border-color: #4a6fc7;
+     box-shadow: 0 0 0 2px rgba(74, 111, 199, 0.2);
+ }
+
+ button {
+     background-color: #4a6fc7;
+     color: white;
+     border: none;
+     cursor: pointer;
+     font-weight: 600;
+     transition: background-color 0.2s;
+     margin-top: 10px;
+     padding: 12px;
+ }
+
+ button:hover {
+     background-color: #3b5aa6;
+ }
+
+ .subject-inputs {
+     margin-top: 15px;
+ }
+
+ .subject-row {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 10px;
+     align-items: center;
+ }
+
+ .subject-row input {
+     flex: 1;
+ }
+
+ .remove-btn {
+     background-color: #dc3545;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     padding: 10px;
+     cursor: pointer;
+     width: auto;
+ }
+
+ .remove-btn:hover {
+     background-color: #c82333;
+ }
+
+ .report-card {
+     background-color: white;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+     margin-top: 20px;
+ }
+
+ .grade-box {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 15px;
+     gap: 10px;
+ }
+
+ .grade-item {
+     text-align: center;
+     padding: 15px;
+     background-color: #f8f9fa;
+     border-radius: 8px;
+     flex: 1;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+ }
+
+ .grade-value {
+     font-size: 1.4rem;
+     font-weight: bold;
+     color: #4a6fc7;
+     margin-top: 5px;
+ }
+
+ .subject-list {
+     margin: 15px 0;
+ }
+
+ .subject-item {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 8px;
+     padding: 10px;
+     background-color: #f8f9fa;
+     border-radius: 5px;
+ }
+
+ .grade-A {
+     color: #28a745;
+ }
+
+ .grade-B {
+     color: #17a2b8;
+ }
+
+ .grade-C {
+     color: #ffc107;
+ }
+
+ .grade-D {
+     color: #fd7e14;
+ }
+
+ .grade-F {
+     color: #dc3545;
+ }
+
+ .comments {
+     margin-top: 15px;
+     padding: 15px;
+     background-color: #e7f3ff;
+     border-radius: 5px;
+     border-left: 4px solid #4a6fc7;
+ }
+
+ .add-subject-btn {
+     background-color: #28a745;
+     width: auto;
+     padding: 8px 15px;
+     margin-top: 0;
+ }
+
+ .add-subject-btn:hover {
+     background-color: #218838;
+ }
